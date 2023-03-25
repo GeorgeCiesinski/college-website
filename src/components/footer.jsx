@@ -7,9 +7,9 @@ const footer = () => {
   return (
     <div className='w-full min-h-[200px]'>
 
-      <ul className='flex justify-between py-6'>
+      <ul className='flex flex-wrap justify-between py-6'>
         {footerLinks.map((footer, index) => (
-          <li key={footer.id} className='font-poppins font-medium text-[18px]'>
+          <li key={footer.id} className='font-poppins font-medium text-[18px] mx-2 my-2'>
             {footer.title}
             <ul>
               {footer.links.map((link, index) => (
@@ -29,7 +29,7 @@ const footer = () => {
         <Icon path={mdiInstagram} size={1} alt='menu' className='w-[28px] h-[28px] mx-2' />
       </div>
 
-      <div className='flex justify-center py-2 text-[12px]'>
+      <div className='flex flex-wrap justify-center py-2 text-[12px]'>
         <div className='cursor-pointer mx-2'>
           Privacy Policy
         </div>
