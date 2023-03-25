@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { navLinks } from '../data/constants';
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/humber_logo.svg';
 import { mdiMenu, mdiClose } from '@mdi/js';
 import { Icon } from '@mdi/react';
 
@@ -11,7 +11,7 @@ const navbar = () => {
 
     return (
         <nav className='w-full flex py-6 justify-between items-center navbar'>
-            <img src={logo} alt='Humber' className='w-[124px]' />
+            <img src={logo} alt='Humber' className='w-[140px]' />
 
             <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
                 {navLinks.map((nav, index) => (

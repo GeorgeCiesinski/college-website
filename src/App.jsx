@@ -3,7 +3,7 @@ import styles from './style';
 import { Navbar, Hero, Quick, Key, Visit, Calendar, Bits, Faq, Footer } from './components';
 
 const App = () => (
-  <div className='bg-gray-100 w-full overflow-hidden'>
+  <div className='bg-primary2 w-full overflow-hidden'>
     <div className={`${styles.padding} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
@@ -52,7 +52,7 @@ const App = () => (
       </div>
     </div>
 
-    <div className={`bg-gray-100 ${styles.paddingX}`}>
+    <div className={`bg-primary1 ${styles.paddingX}`}>
       <div className={`${styles.boxWidth}`}>
         <Footer />
       </div>

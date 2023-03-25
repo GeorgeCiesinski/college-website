@@ -5,7 +5,7 @@ import { Icon } from '@mdi/react';
 
 const footer = () => {
   return (
-    <div className='w-full min-h-[200px]'>
+    <div className='w-full min-h-[200px] text-white'>
 
       <ul className='flex flex-wrap justify-between py-6'>
         {footerLinks.map((footer, index) => (
