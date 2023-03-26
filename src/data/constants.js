@@ -1,3 +1,9 @@
+import journey from '../assets/images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg';
+import ideas from '../assets/images/airfocus-v89zhr0iBFY-unsplash.jpg';
+import business from '../assets/images/microsoft-365-oUbzU87d1Gc-unsplash.jpg';
+import technology from '../assets/images/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg';
+import student from '../assets/images/annie-spratt-QckxruozjRg-unsplash.jpg';
+
 export const navLinks = [
     {
         id: "search",
@@ -24,6 +30,34 @@ export const navLinks = [
         title: "Login",
     },
 ];
+
+export const heroSlides = [
+    {
+        id: "journey",
+        title: "Journey",
+        image: journey,
+    },
+    {
+        id: "ideas",
+        title: "Ideas",
+        image: ideas,
+    },
+    {
+        id: "business",
+        title: "Business",
+        image: business,
+    },
+    {
+        id: "technology",
+        title: "Technology",
+        image: technology,
+    },
+    {
+        id: "student",
+        title: "Student",
+        image: student,
+    },
+]
 
 export const footerLinks = [
     {
