@@ -3,8 +3,8 @@ import styles from './style';
 import { Navbar, Hero, Quick, Calendar, Bits, Faq, Footer } from './components';
 
 const App = () => (
-  <div className='bg-white w-full overflow-hidden'>
-    <div className={`${styles.padding} ${styles.flexCenter}`}>
+  <div className='w-full overflow-y-visible'>
+    <div className={`${styles.padding} ${styles.flexCenter} bg-white sticky top-0 z-20`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
       </div>
