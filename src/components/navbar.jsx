@@ -16,8 +16,8 @@ const navbar = () => {
 
             <div className='hidden sm:block'>
                 <form action='#' className='flex items-center'>
-                    <input className='border-2 border-primary1 rounded-l-full'></input>
-                    <button className='border-t-2 border-r-2 border-b-2 border-primary1 rounded-r-full'>
+                    <input className='border-x border-y border-primary1 rounded-l-full'></input>
+                    <button className='border-t border-r border-b border-primary1 bg-primary1 text-white rounded-r-full'>
                         <Icon 
                             path={mdiMagnify} 
                             size={1} 
