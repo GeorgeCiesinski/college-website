@@ -6,10 +6,6 @@ import student from '../assets/images/annie-spratt-QckxruozjRg-unsplash.jpg';
 
 export const navLinks = [
     {
-        id: "search",
-        title: "Search",
-    },
-    {
         id: "services",
         title: "Services",
     },
