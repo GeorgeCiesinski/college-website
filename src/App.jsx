@@ -16,7 +16,7 @@ const App = () => (
       </div>
     </div>
 
-    <div className={`bg-gray-50 ${styles.paddingX}`}>
+    <div className={`bg-primary2 ${styles.paddingX}`}>
       <div className={`${styles.boxWidth}`}>
         <Quick />
       </div>

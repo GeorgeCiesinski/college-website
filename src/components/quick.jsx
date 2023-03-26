@@ -2,7 +2,11 @@ import React from 'react'
 
 const quick = () => {
   return (
-    <div>quick</div>
+    <div
+      className='h-[150px] p-4'
+    >
+      quick
+    </div>
   )
 }
 
