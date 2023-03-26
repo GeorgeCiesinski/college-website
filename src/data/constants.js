@@ -34,27 +34,27 @@ export const navLinks = [
 export const heroSlides = [
     {
         id: "journey",
-        title: "Journey",
+        title: "We support students and staff in the journey of discovery",
         image: journey,
     },
     {
         id: "ideas",
-        title: "Ideas",
+        title: "We transform client ideas into results",
         image: ideas,
     },
     {
         id: "business",
-        title: "Business",
+        title: "We enhance business processes and enable better decision making through improved outcome measurement",
         image: business,
     },
     {
         id: "technology",
-        title: "Technology",
+        title: "We deliver integrated technology solutions to improve collaboration and communication across the Humber community",
         image: technology,
     },
     {
         id: "student",
-        title: "Student",
+        title: "We leverage technology to enable student engagement and success",
         image: student,
     },
 ]
