@@ -23,13 +23,13 @@ const App = () => (
     </div>
 
     <div className={`bg-gray-50 ${styles.paddingX} flex justify-center`}>
-      <div className={`${styles.boxWidth} max-w-[1440px]`}>
+      <div className={`${styles.contentWidth}`}>
         <Faq />
       </div>
     </div>
 
-    <div className={`bg-gray-50 ${styles.paddingX}`}>
-      <div className={`${styles.boxWidth}`}>
+    <div className={`bg-gray-50 ${styles.paddingX} flex justify-center`}>
+      <div className={`${styles.boxWidth} max-w-[1440px]`}>
         <Calendar />
       </div>
     </div>

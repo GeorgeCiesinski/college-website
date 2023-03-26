@@ -48,7 +48,6 @@ const navbar = () => {
                             className='w-[28px] h-[28px]'
                         />
                     </a>
-                    
                 </li>
             </ul>
 
@@ -63,6 +62,19 @@ const navbar = () => {
 
                 <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-gray-200 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
                     <ul className='list-none flex justify-end items-center flex-1 flex-col'>
+                        <li className='font-poppins font-normal cursor-pointer text-[16px] mb-10'>
+                            <a href='#login' className='flex'>
+                                <p className='pr-2'>
+                                    Login
+                                </p>
+                                <Icon 
+                                    path={mdiAccountCircle} 
+                                    size={1} 
+                                    alt='search'
+                                    className='w-[28px] h-[28px]'
+                                />
+                            </a>
+                        </li>
                         {navLinks.map((nav, index) => (
                             <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mb-0' : 'mb-10'}`}>
                                 <a href={`#${nav.id}`}>
