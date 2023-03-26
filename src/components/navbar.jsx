@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { navLinks } from '../data/constants';
 import logo from '../assets/images/humber_logo.svg';
-import { mdiMenu, mdiClose, mdiMagnify } from '@mdi/js';
+import { mdiMenu, mdiClose, mdiMagnify, mdiAccountCircle } from '@mdi/js';
 import { Icon } from '@mdi/react';
 
 const navbar = () => {
@@ -30,12 +30,26 @@ const navbar = () => {
 
             <ul className='list-none sm:flex hidden justify-end items-center flex-1 py-4'>
                 {navLinks.map((nav, index) => (
-                    <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}>
+                    <li key={nav.id} className='font-poppins font-normal cursor-pointer text-[16px] mr-10'>
                         <a href={`#${nav.id}`}>
                             {nav.title}
                         </a>
                     </li>
                 ))}
+                <li>
+                    <a href='#login' className='flex'>
+                        <p className='pr-2'>
+                            Login
+                        </p>
+                        <Icon 
+                            path={mdiAccountCircle} 
+                            size={1} 
+                            alt='search'
+                            className='w-[28px] h-[28px]'
+                        />
+                    </a>
+                    
+                </li>
             </ul>
 
             <div className='sm:hidden flex flex-1 justify-end items-center z-10'>

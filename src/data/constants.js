@@ -20,11 +20,7 @@ export const navLinks = [
     {
         id: "about",
         title: "About",
-    },
-    {
-        id: "login",
-        title: "Login",
-    },
+    }
 ];
 
 export const heroSlides = [
