@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './style';
-import { Navbar, Hero, Quick, Visit, Calendar, Bits, Faq, Footer } from './components';
+import { Navbar, Hero, Quick, Calendar, Bits, Faq, Footer } from './components';
 
 const App = () => (
   <div className='bg-white w-full overflow-hidden'>
@@ -22,15 +22,9 @@ const App = () => (
       </div>
     </div>
 
-    <div className={`bg-gray-50 ${styles.paddingX}`}>
-      <div className={`${styles.boxWidth}`}>
+    <div className={`bg-gray-50 ${styles.paddingX} flex justify-center`}>
+      <div className={`${styles.boxWidth} max-w-[1440px]`}>
         <Faq />
-      </div>
-    </div>
-
-    <div className={`bg-gray-50 ${styles.paddingX}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Visit />
       </div>
     </div>
 
