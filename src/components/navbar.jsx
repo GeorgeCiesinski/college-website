@@ -13,7 +13,7 @@ const navbar = () => {
     return (
         <nav className='w-full flex flex-wrap py-2 justify-between items-center navbar'>
             
-            <img src={logo} alt='Humber' className='w-[140px] pr-8 my-2' />
+            <img src={logo} alt='Humber' className='w-[140px] pr-6 my-4' />
 
             <div className='hidden sm:block mx-4 my-2'>
                 <form action='#' className='flex items-center'>
@@ -61,7 +61,7 @@ const navbar = () => {
                     onClick={() => setToggle((prev) => !prev)}
                 />
 
-                <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-gray-200 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
+                <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-white drop-shadow-2xl absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
                     <ul className='list-none flex justify-end items-center flex-1 flex-col'>
                         <li className='font-poppins font-normal cursor-pointer text-[16px] mb-10'>
                             <a href='#login' className='flex'>
