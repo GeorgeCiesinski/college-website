@@ -78,7 +78,7 @@ const navbar = () => {
                         </li>
                         {navLinks.map((nav, index) => (
                             <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mb-0' : 'mb-10'}`}>
-                                <a href={`#${nav.id}`}>
+                                <a href={`#${nav.id}`} onClick={() => setToggle((prev) => !prev)}>
                                     {nav.title}
                                 </a>
                             </li>

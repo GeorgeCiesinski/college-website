@@ -3,7 +3,7 @@ import styles from './style';
 import { Navbar, Hero, Quick, Calendar, Bits, Faq, Footer } from './components';
 
 const App = () => (
-  <div className='w-full overflow-y-visible'>
+  <div className='w-full overflow-y-visible snap-y scroll-pt-10'>
     <div className={`${styles.padding} ${styles.flexCenter} bg-white sticky top-0 z-20`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />

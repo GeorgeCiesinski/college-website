@@ -21,7 +21,8 @@ const QuickButton = ({ title, icon, alt }) => {
 
 const quick = () => {
   return (
-    <div
+    <section
+      id="services"
       className={`${styles.flexCenter} w-full p-4 flex-wrap`}
     >
       {quickActions.map((action, index) => (
@@ -29,7 +30,7 @@ const quick = () => {
             <QuickButton title={action.title} icon={action.icon} alt={action.id} />
           </div>
         ))}
-    </div>
+    </section>
   )
 }
 
