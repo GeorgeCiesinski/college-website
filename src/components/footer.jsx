@@ -13,7 +13,7 @@ const footer = () => {
             {footer.title}
             <ul className='mt-2'>
               {footer.links.map((link, index) => (
-                <li key={link.id} className='text-primary2 font-normal text-[16px] cursor-pointer'>{link.title}</li>
+                <li key={link.id} className='text-primary2 font-normal text-[16px] cursor-pointer hover:underline'>{link.title}</li>
               ))}
             </ul>
           </li>
