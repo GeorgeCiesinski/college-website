@@ -22,7 +22,7 @@ const QuestionAnswer = ({ title, answer }) => {
           className='w-[28px] h-[28px]'
         />
       </button>
-      <div className={`${toggle ? 'flex' : 'hidden'} whitespace-pre-line bg-primary2 text-white p-2`}>
+      <div className={`${toggle ? 'flex' : 'hidden'} whitespace-pre-line bg-primary2 text-black p-2`}>
         {answer}
       </div>
     </>

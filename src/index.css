@@ -3,3 +3,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.react-calendar {
+    border: none;
+    font-family: "Poppins";
+}
+
+@media only screen and (min-width: 1200px)  {
+    .react-calendar {
+        height: 414px;
+        width: 500px;
+        font-size: 18px;
+    }
+    
+    .react-calendar__month-view__weekdays__weekday {
+        height: 37px;
+    }
+    
+    .react-calendar__month-view__days__day {
+        height: 63px;
+    }
+}
