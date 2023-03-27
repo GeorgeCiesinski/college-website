@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import styles from '../style';
 import { faqQuestions, visitInfo } from '../data/constants';
 import { mdiPlus, mdiMinus } from '@mdi/js';
 import { Icon } from '@mdi/react';
@@ -32,7 +33,7 @@ const faq = () => {
   return (
     <div className='flex flex-wrap'>
       <div className='w-full sm:w-1/2 p-4'>
-        <h1 className='text-primary1 text-[25px] font-bold p-2 text-center sm:text-left'>Frequently Asked Questions</h1>
+        <h1 className={`${styles.heading1}`}>Frequently Asked Questions</h1>
         {faqQuestions.map((question, index) => (
           <div key={question.id}>
             <QuestionAnswer title={question.title} answer={question.answer} />
@@ -41,12 +42,12 @@ const faq = () => {
       </div>
       <div className='flex justify-center w-full sm:w-1/2 p-4'>
         <div className='w-max'>
-          <h1 className='text-primary1 text-[25px] font-bold p-2 text-center sm:text-left'>Drop-In Support</h1>
-          <h2 className='text-primary1 text-[16px] font-bold p-2 text-center sm:text-left'>Hours</h2>
+          <h1 className={`${styles.heading1}`}>Drop-In Support</h1>
+          <h2 className={`${styles.heading2}`}>Hours</h2>
           <p className='p-2'>
             {visitInfo.hours}
           </p>
-          <h2 className='text-primary1 text-[16px] font-bold p-2 text-center sm:text-left'>Location</h2>
+          <h2 className={`${styles.heading2}`}>Location</h2>
           <p className='p-2 whitespace-pre-line'>
             {visitInfo.location}
           </p>

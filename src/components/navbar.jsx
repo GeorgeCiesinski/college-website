@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import styles from '../style';
 import { navLinks } from '../data/constants';
 import logo from '../assets/images/humber_logo.svg';
 import { mdiMenu, mdiClose, mdiMagnify, mdiAccountCircle } from '@mdi/js';
@@ -10,14 +11,14 @@ const navbar = () => {
     const [toggle, setToggle] = useState(false);
 
     return (
-        <nav className='w-full flex flex-wrap py-6 justify-between items-center navbar'>
+        <nav className='w-full flex flex-wrap py-2 justify-between items-center navbar'>
             
-            <img src={logo} alt='Humber' className='w-[140px] pr-10' />
+            <img src={logo} alt='Humber' className='w-[140px] pr-8 my-2' />
 
-            <div className='hidden sm:block'>
+            <div className='hidden sm:block mx-4 my-2'>
                 <form action='#' className='flex items-center'>
                     <input className='border-x border-y border-primary1 rounded-l-full'></input>
-                    <button className='border-t border-r border-b border-primary1 bg-primary1 text-white rounded-r-full'>
+                    <button className='border-t border-r border-b border-primary1 bg-primary1 hover:bg-primary2 hover:border-primary2  text-white rounded-r-full'>
                         <Icon 
                             path={mdiMagnify} 
                             size={1} 
@@ -30,13 +31,13 @@ const navbar = () => {
 
             <ul className='list-none sm:flex hidden justify-end items-center flex-1 py-4'>
                 {navLinks.map((nav, index) => (
-                    <li key={nav.id} className='font-poppins font-normal cursor-pointer text-[16px] mr-10'>
+                    <li key={nav.id} className={`${styles.flexCenter} font-poppins font-normal cursor-pointer text-[16px] mr-10 transition duration-150 border-b-[6px] border-transparent hover:border-primary2`}>
                         <a href={`#${nav.id}`}>
                             {nav.title}
                         </a>
                     </li>
                 ))}
-                <li>
+                <li className={`${styles.flexCenter} w-[105px] font-poppins font-normal cursor-pointer text-[16px] transition duration-150 border-b-[6px] border-transparent hover:border-primary2`}>
                     <a href='#login' className='flex'>
                         <p className='pr-2'>
                             Login
@@ -44,7 +45,7 @@ const navbar = () => {
                         <Icon 
                             path={mdiAccountCircle} 
                             size={1} 
-                            alt='search'
+                            alt='login'
                             className='w-[28px] h-[28px]'
                         />
                     </a>
@@ -70,7 +71,7 @@ const navbar = () => {
                                 <Icon 
                                     path={mdiAccountCircle} 
                                     size={1} 
-                                    alt='search'
+                                    alt='login'
                                     className='w-[28px] h-[28px]'
                                 />
                             </a>
