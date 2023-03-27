@@ -246,6 +246,10 @@ export const footerLinks = [
             {
                 id: "student-life",
                 title: "Student Life"
+            },
+            {
+                id: "international-students",
+                title: "International Students"
             }
         ]
     },
@@ -254,42 +258,20 @@ export const footerLinks = [
         title: "Resources",
         links: [
             {
-                id: "programs",
-                title: "Programs"
+                id: "community",
+                title: "Community Resources"
             },
             {
-                id: "admissions",
-                title: "Admissions"
+                id: "alumni",
+                title: "Alumni and Donors"
             },
             {
-                id: "global",
-                title: "Global"
+                id: "counsellors",
+                title: "Guidance Counsellors"
             },
             {
-                id: "student-life",
-                title: "Student Life"
-            }
-        ]
-    },
-    {
-        id: "contact",
-        title: "Contact",
-        links: [
-            {
-                id: "programs",
-                title: "Programs"
-            },
-            {
-                id: "admissions",
-                title: "Admissions"
-            },
-            {
-                id: "global",
-                title: "Global"
-            },
-            {
-                id: "student-life",
-                title: "Student Life"
+                id: "tour",
+                title: "Book a Tour"
             }
         ]
     },
@@ -298,20 +280,34 @@ export const footerLinks = [
         title: "Employees",
         links: [
             {
-                id: "programs",
-                title: "Programs"
+                id: "employees-partners",
+                title: "Employees and Partners"
             },
             {
-                id: "admissions",
-                title: "Admissions"
+                id: "faculty-staff",
+                title: "Faculty and Staff"
             },
             {
-                id: "global",
-                title: "Global"
+                id: "directory",
+                title: "Directory"
+            }
+        ]
+    },
+    {
+        id: "contact",
+        title: "Contact",
+        links: [
+            {
+                id: "phone",
+                title: "+1 (416) 675-3111"
             },
             {
-                id: "student-life",
-                title: "Student Life"
+                id: "email-address",
+                title: "enquiry@humber.ca"
+            },
+            {
+                id: "careers",
+                title: "Careers at Humber"
             }
         ]
     },
