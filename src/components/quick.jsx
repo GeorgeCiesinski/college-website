@@ -5,7 +5,7 @@ import { Icon } from '@mdi/react';
 
 const QuickButton = ({ title, icon, alt }) => {
   return (
-    <button className={`${styles.flexCenter} flex-col w-[140px] h-[140px] hover:bg-black/10 m-2`}>
+    <button className={`${styles.flexCenter} flex-col w-[140px] h-[140px] hover:bg-black/10 m-1 sm:m-2`}>
       <Icon 
         path={icon} 
         size={2} 
@@ -23,13 +23,24 @@ const quick = () => {
   return (
     <section
       id="services"
-      className={`${styles.flexCenter} w-full p-4 flex-wrap`}
+      className={`flex flex-col items-center w-full p-4`}
     >
-      {quickActions.map((action, index) => (
-        <div key={action.id}>
-          <QuickButton title={action.title} icon={action.icon} alt={action.id} />
+      <h1 className={`${styles.heading1}`}>Services</h1>
+      <div className={`${styles.flexCenter} w-full flex-wrap`}>
+        {quickActions.map((action, index) => (
+          <div key={action.id}>
+            <QuickButton title={action.title} icon={action.icon} alt={action.id} />
+          </div>
+        ))}
+      </div>
+      <div>
+        <div>
+          
         </div>
-      ))}
+        <div>
+          
+        </div>
+      </div>
     </section>
   )
 }

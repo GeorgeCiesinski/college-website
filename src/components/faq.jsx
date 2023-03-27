@@ -31,7 +31,10 @@ const QuestionAnswer = ({ title, answer }) => {
 
 const faq = () => {
   return (
-    <div className='flex flex-wrap'>
+    <section 
+      id='faq'
+      className='flex flex-wrap'
+    >
       <div className='w-full sm:w-1/2 p-4'>
         <h1 className={`${styles.heading1}`}>Frequently Asked Questions</h1>
         {faqQuestions.map((question, index) => (
@@ -53,7 +56,7 @@ const faq = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
