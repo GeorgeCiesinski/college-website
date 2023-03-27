@@ -13,6 +13,11 @@ html {
     scroll-padding-top: 70px;
 }
 
+.text-shadow {
+    --primary-color: #000033;
+    text-shadow: -1px -1px 0 var(--primary-color), 1px -1px 0 var(--primary-color), -1px 1px 0 var(--primary-color), 1px 1px 0 var(--primary-color);
+}
+
 @media only screen and (max-width: 767px) and (orientation:portrait)  {
     html {
         scroll-padding-top: 50px;
