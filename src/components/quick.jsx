@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../style';
-import { quickActions } from '../data/constants';
+import { quickActions, servicesOptions } from '../data/constants';
 import { Icon } from '@mdi/react';
 
 const QuickButton = ({ title, icon, alt }) => {
@@ -26,10 +26,10 @@ const quick = () => {
       className={`${styles.flexCenter} w-full p-4 flex-wrap`}
     >
       {quickActions.map((action, index) => (
-          <div key={action.id}>
-            <QuickButton title={action.title} icon={action.icon} alt={action.id} />
-          </div>
-        ))}
+        <div key={action.id}>
+          <QuickButton title={action.title} icon={action.icon} alt={action.id} />
+        </div>
+      ))}
     </section>
   )
 }

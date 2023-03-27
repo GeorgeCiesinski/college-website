@@ -3,7 +3,9 @@ import ideas from '../assets/images/airfocus-v89zhr0iBFY-unsplash.jpg';
 import business from '../assets/images/microsoft-365-oUbzU87d1Gc-unsplash.jpg';
 import technology from '../assets/images/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg';
 import student from '../assets/images/annie-spratt-QckxruozjRg-unsplash.jpg';
-import { mdiFormTextboxPassword, mdiWifi, mdiLaptop, mdiListBoxOutline, mdiFaceAgent, mdiDownload, mdiWeb, mdiBulletinBoard } from '@mdi/js';
+import { mdiFormTextboxPassword, mdiWifi, mdiLaptop, mdiListBoxOutline, mdiFaceAgent, mdiDownload, mdiCloudUpload, mdiBulletinBoard } from '@mdi/js';
+import { mdiPrinter, mdiLibrary, mdiCloudCircle, mdiCalendar, mdiLaptopAccount } from '@mdi/js';
+
 
 export const navLinks = [
     {
@@ -79,20 +81,65 @@ export const quickActions = [
         icon: mdiFaceAgent
     },
     {
+        id: "file-storage",
+        title: "File Storage",
+        icon: mdiCloudUpload
+    },
+    {
         id: "software",
         title: "Download Software",
         icon: mdiDownload
-    },
-    {
-        id: "social-media",
-        title: "Social Media Safety",
-        icon: mdiWeb
     },
     {
         id: "whats-new",
         title: "Whats New?",
         icon: mdiBulletinBoard
     },
+]
+
+export const servicesOptions = [
+    {
+        id: "student",
+        title: "Student",
+        options: [
+            {
+                id: "print",
+                title: "Copy/Print/Scan/Fax",
+                icon: mdiPrinter
+            },
+            {
+                id: "open-access",
+                title: "Open Access Learning Spaces",
+                icon: mdiLibrary
+            },
+            {
+                id: "remote-student",
+                title: "Working remotely for Students",
+                icon: mdiCloudCircle
+            }
+        ]
+    },
+    {
+        id: "employees",
+        title: "Employees",
+        options: [
+            {
+                id: "email",
+                title: "Email & Calendaring",
+                icon: mdiCalendar
+            },
+            {
+                id: "conferencing",
+                title: "Audio, Visual, & Web Conferencing",
+                icon: mdiLaptopAccount
+            },
+            {
+                id: "remote-staff",
+                title: "Working remotely for Staff",
+                icon: mdiCloudCircle
+            }
+        ]
+    }
 ]
 
 export const faqQuestions = [
