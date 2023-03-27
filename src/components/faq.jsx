@@ -15,10 +15,10 @@ const QuestionAnswer = ({ title, answer }) => {
       >
         {title}
         <Icon 
-                    path={toggle ? mdiMinus : mdiPlus} 
-                    size={1} 
-                    alt='expand'
-                    className='w-[28px] h-[28px]'
+          path={toggle ? mdiMinus : mdiPlus} 
+          size={1} 
+          alt='expand'
+          className='w-[28px] h-[28px]'
         />
       </button>
       <div className={`${toggle ? 'flex' : 'hidden'} whitespace-pre-line bg-primary2 text-white p-2`}>

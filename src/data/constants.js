@@ -3,6 +3,7 @@ import ideas from '../assets/images/airfocus-v89zhr0iBFY-unsplash.jpg';
 import business from '../assets/images/microsoft-365-oUbzU87d1Gc-unsplash.jpg';
 import technology from '../assets/images/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg';
 import student from '../assets/images/annie-spratt-QckxruozjRg-unsplash.jpg';
+import { mdiFormTextboxPassword, mdiWifi, mdiLaptop, mdiListBoxOutline, mdiFaceAgent, mdiDownload, mdiWeb, mdiBulletinBoard } from '@mdi/js';
 
 export const navLinks = [
     {
@@ -48,6 +49,49 @@ export const heroSlides = [
         id: "student",
         title: "We leverage technology to enable student engagement and success",
         image: student,
+    },
+]
+
+export const quickActions = [
+    {
+        id: "reset",
+        title: "Reset Password",
+        icon: mdiFormTextboxPassword
+    },
+    {
+        id: "network",
+        title: "Network Access",
+        icon: mdiWifi
+    },
+    {
+        id: "rental",
+        title: "Equipment Rental",
+        icon: mdiLaptop
+    },
+    {
+        id: "eform",
+        title: "Submit an eForm",
+        icon: mdiListBoxOutline
+    },
+    {
+        id: "analyst",
+        title: "Speak with an Agent",
+        icon: mdiFaceAgent
+    },
+    {
+        id: "software",
+        title: "Download Software",
+        icon: mdiDownload
+    },
+    {
+        id: "social-media",
+        title: "Social Media Safety",
+        icon: mdiWeb
+    },
+    {
+        id: "whats-new",
+        title: "Whats New?",
+        icon: mdiBulletinBoard
     },
 ]
 
