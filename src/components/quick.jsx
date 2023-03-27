@@ -5,7 +5,7 @@ import { Icon } from '@mdi/react';
 
 const QuickButton = ({ title, icon, alt }) => {
   return (
-    <button className={`${styles.flexCenter} flex-col w-[140px] h-[140px] text-primary1 hover:bg-black/10 m-1 sm:m-2`}>
+    <button className={`${styles.flexCenter} flex-col w-[140px] h-[140px] text-primary1 hover:bg-black/10 m-1 sm:m-2 rounded-lg`}>
       <Icon 
         path={icon} 
         size={2} 
@@ -21,7 +21,7 @@ const QuickButton = ({ title, icon, alt }) => {
 
 const ServiceSection = ({ title, services }) => {
   return (
-    <div className='flex flex-col items-center my-4 hover:bg-black/5'>
+    <div className='flex flex-col items-center my-4 hover:bg-black/5 rounded-lg'>
       <h2 className={`${styles.altHeading2}`}>{title}</h2>
       <div className='flex flex-wrap justify-center'>
         {services.map((service, index) => (
@@ -38,10 +38,10 @@ const quick = () => {
   return (
     <section
       id="services"
-      className={`flex flex-col items-center w-full p-4`}
+      className={`flex flex-col items-center p-4 w-full`}
     >
       <h1 className={`${styles.altHeading1}`}>Services</h1>
-      <div className={`${styles.flexCenter} w-full flex-wrap hover:bg-black/5`}>
+      <div className={`${styles.flexCenter} flex-wrap hover:bg-black/5 rounded-lg`}>
         {quickActions.map((action, index) => (
           <div key={action.id}>
             <QuickButton title={action.title} icon={action.icon} alt={action.id} />

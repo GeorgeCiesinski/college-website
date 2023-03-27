@@ -11,7 +11,7 @@ const QuestionAnswer = ({ title, answer }) => {
   return (
     <>
       <button 
-        className='flex justify-between items-center bg-primary1 text-white font-medium h-16 text-left w-full p-2'
+        className='flex justify-between items-center bg-primary1 text-white text-[18px] font-medium h-16 text-left w-full p-2'
         onClick={() => setToggle((prev) => !prev)}
       >
         {title}
@@ -37,11 +37,13 @@ const faq = () => {
     >
       <div className='w-full sm:w-1/2 p-4'>
         <h1 className={`${styles.heading1}`}>Frequently Asked Questions</h1>
-        {faqQuestions.map((question, index) => (
-          <div key={question.id}>
-            <QuestionAnswer title={question.title} answer={question.answer} />
-          </div>
-        ))}
+        <div className='rounded-lg overflow-hidden'>
+          {faqQuestions.map((question, index) => (
+            <div key={question.id}>
+              <QuestionAnswer title={question.title} answer={question.answer} />
+            </div>
+          ))}
+        </div>
       </div>
       <div className='flex justify-center w-full sm:w-1/2 p-4'>
         <div className='w-max'>
