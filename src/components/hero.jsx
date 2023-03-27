@@ -30,7 +30,7 @@ const hero = () => {
         className='w-full h-full bg-center bg-cover'
       ></div>
       <div 
-        className='absolute top-[20%] left-[50%] -translate-x-[50%] translate-y-[-20%] font-bold text-[18px] sm:text-[30px] text-white text-shadow'
+        className='absolute top-[20%] left-[50%] -translate-x-[50%] translate-y-[-20%] font-bold text-[18px] sm:text-[30px] text-center sm:text-left text-white text-shadow'
       >
         {heroSlides[currentIndex].title}
       </div>
