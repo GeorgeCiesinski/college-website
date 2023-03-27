@@ -3,8 +3,8 @@ import ideas from '../assets/images/airfocus-v89zhr0iBFY-unsplash.jpg';
 import business from '../assets/images/microsoft-365-oUbzU87d1Gc-unsplash.jpg';
 import technology from '../assets/images/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg';
 import student from '../assets/images/annie-spratt-QckxruozjRg-unsplash.jpg';
-import { mdiFormTextboxPassword, mdiWifi, mdiLaptop, mdiListBoxOutline, mdiFaceAgent, mdiDownload, mdiCloudUpload, mdiBulletinBoard } from '@mdi/js';
-import { mdiPrinter, mdiLibrary, mdiCloudCircle, mdiCalendar, mdiLaptopAccount } from '@mdi/js';
+import { mdiFormTextboxPassword, mdiWifi, mdiLaptop, mdiListBoxOutline, mdiFaceAgent, mdiDownload, mdiBulletinBoard, mdiMicrosoftOnedrive } from '@mdi/js';
+import { mdiPrinter, mdiLibrary, mdiCloudCircle, mdiCalendar, mdiLaptopAccount, mdiAccountWrench } from '@mdi/js';
 
 
 export const navLinks = [
@@ -86,8 +86,8 @@ export const quickActions = [
     },
     {
         id: "file-storage",
-        title: "File Storage",
-        icon: mdiCloudUpload
+        title: "File Storage OneDrive",
+        icon: mdiMicrosoftOnedrive
     },
     {
         id: "software",
@@ -96,7 +96,7 @@ export const quickActions = [
     },
     {
         id: "whats-new",
-        title: "Whats New?",
+        title: "Whats New in ITS?",
         icon: mdiBulletinBoard
     },
 ]
@@ -105,10 +105,10 @@ export const servicesOptions = [
     {
         id: "student",
         title: "Student",
-        options: [
+        services: [
             {
                 id: "print",
-                title: "Copy/Print/Scan/Fax",
+                title: "Copy / Print / Scan / Fax",
                 icon: mdiPrinter
             },
             {
@@ -120,13 +120,18 @@ export const servicesOptions = [
                 id: "remote-student",
                 title: "Working remotely for Students",
                 icon: mdiCloudCircle
+            },
+            {
+                id: "services-staff",
+                title: "Services for Employees",
+                icon: mdiAccountWrench
             }
         ]
     },
     {
         id: "employees",
         title: "Employees",
-        options: [
+        services: [
             {
                 id: "email",
                 title: "Email & Calendaring",
@@ -134,13 +139,18 @@ export const servicesOptions = [
             },
             {
                 id: "conferencing",
-                title: "Audio, Visual, & Web Conferencing",
+                title: "Audio, Video, Conferencing",
                 icon: mdiLaptopAccount
             },
             {
                 id: "remote-staff",
                 title: "Working remotely for Staff",
                 icon: mdiCloudCircle
+            },
+            {
+                id: "services-staff",
+                title: "Services for Employees",
+                icon: mdiAccountWrench
             }
         ]
     }
