@@ -3,6 +3,8 @@ import styles from '../style';
 import Calendar from 'react-calendar';
 import { visitInfo } from '../data/constants';
 import 'react-calendar/dist/Calendar.css';
+import { mdiMapMarkerCircle } from '@mdi/js';
+import { Icon } from '@mdi/react';
 
 const calendar = () => {
   const [value, onChange] = useState(new Date());
@@ -27,7 +29,20 @@ const calendar = () => {
           <h2 className={`${styles.heading2}`}>Humber Lakeshore Campus</h2>
           <p className='p-2 whitespace-pre-line font-poppins'>{visitInfo.lake}</p>
           <div className={`${styles.flexCenter} my-6`}>
-            <button className='p-4 bg-primary2 font-bold rounded-lg drop-shadow-xl hover:scale-110'>Book a Tour</button>
+            <button className='flex flex-col justify-center items-center p-4 bg-primary2 font-bold rounded-lg drop-shadow-xl hover:scale-110 w-[150px] h-[75px]'>
+              <Icon 
+                path={mdiMapMarkerCircle} 
+                size={1} 
+                alt='map'
+                className='w-[28px] h-[28px]'
+              />
+              <p>
+                Campus Map
+              </p>
+            </button>
+          </div>
+          <div className={`${styles.flexCenter} my-6`}>
+            <button className='p-4 bg-primary2 font-bold rounded-lg drop-shadow-xl hover:scale-110 w-[150px] h-[75px]'>Book a Tour</button>
           </div>
         </div>
       </div>
