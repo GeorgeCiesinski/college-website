@@ -1,6 +1,6 @@
-import journey from '../assets/images/hero/priscilla-du-preez-XkKCui44iM0-unsplash.jpg';
-import ideas from '../assets/images/hero/airfocus-v89zhr0iBFY-unsplash.jpg';
-import business from '../assets/images/hero/microsoft-365-oUbzU87d1Gc-unsplash.jpg';
+import journey from '../assets/images/hero/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg';
+import ideas from '../assets/images/hero/airfocus-f2C59x5uvn8-unsplash.jpg';
+import business from '../assets/images/hero/nasa-Q1p7bh3SHj8-unsplash.jpg';
 import technology from '../assets/images/hero/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg';
 import student from '../assets/images/hero/annie-spratt-QckxruozjRg-unsplash.jpg';
 import { mdiFormTextboxPassword, mdiWifi, mdiLaptop, mdiListBoxOutline, mdiFaceAgent, mdiDownload, mdiBulletinBoard, mdiMicrosoftOnedrive } from '@mdi/js';
