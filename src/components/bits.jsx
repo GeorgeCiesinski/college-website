@@ -49,7 +49,10 @@ const bits = () => {
   }
 
   return (
-    <div className='w-full relative group py-8'>
+    <section 
+      id='bits'
+      className='w-full relative group py-8'
+    >
       <div className={`${styles.flexCenter} relative w-full h-max`}>
         <div className='w-3/5 sm:w-4/5 overflow-hidden'>
           <div className='flex w-max slider transition duration-300'>
@@ -92,8 +95,7 @@ const bits = () => {
           ))}
         </div>
       </div>
-    </div>
-
+    </section>
   )
 }
 

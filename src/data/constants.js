@@ -29,8 +29,8 @@ export const navLinks = [
         title: "Events",
     },
     {
-        id: "international",
-        title: "International",
+        id: "bits",
+        title: "Bits & Bytes",
     },
     {
         id: "about",
@@ -231,7 +231,13 @@ export const visitInfo = {
     
     International Graduate School (IGS)
     59 Hayden Street, 5th floor
-    Monday to Friday: 7:30 a.m. - 4:30 p.m.`
+    Monday to Friday: 7:30 a.m. - 4:30 p.m.`,
+    north: `205 Humber College Blvd, 
+    Etobicoke, ON 
+    M9W 5L7`,
+    lake: `3199 Lake Shore Blvd W, 
+    Etobicoke, ON 
+    M8V 1K8`
 }
 
 export const bytesImages = [

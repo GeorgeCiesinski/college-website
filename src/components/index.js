@@ -4,6 +4,7 @@ import Quick from './quick';
 import Faq from './faq';
 import Calendar from './calendar';
 import Bits from './bits';
+import Accessibility from './accessibility';
 import Footer from './footer';
 
 export {
@@ -13,5 +14,6 @@ export {
     Faq, 
     Calendar,
     Bits,
+    Accessibility,
     Footer
 }

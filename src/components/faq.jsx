@@ -37,7 +37,7 @@ const faq = () => {
     >
       <div className='w-full sm:w-1/2 p-4'>
         <h1 className={`${styles.heading1}`}>Frequently Asked Questions</h1>
-        <div className='rounded-lg overflow-hidden'>
+        <div className='w-full rounded-lg overflow-hidden'>
           {faqQuestions.map((question, index) => (
             <div key={question.id}>
               <QuestionAnswer title={question.title} answer={question.answer} />
@@ -49,11 +49,11 @@ const faq = () => {
         <div className='w-max'>
           <h1 className={`${styles.heading1}`}>Drop-In Support</h1>
           <h2 className={`${styles.heading2}`}>Hours</h2>
-          <p className='p-2'>
+          <p className='p-2 whitespace-pre-line font-poppins'>
             {visitInfo.hours}
           </p>
           <h2 className={`${styles.heading2}`}>Location</h2>
-          <p className='p-2 whitespace-pre-line'>
+          <p className='p-2 whitespace-pre-line font-poppins'>
             {visitInfo.location}
           </p>
         </div>

@@ -4,11 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.react-calendar {
-    border: none;
-    font-family: "Poppins";
-}
-
 html {
     scroll-padding-top: 70px;
 }
@@ -30,10 +25,27 @@ html {
     }
 }
 
-@media only screen and (min-width: 1200px)  {
+.react-calendar {
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: "Poppins";
+}
+
+.react-calendar__tile--now {
+    color: white;
+    background-color: #5c068c;
+}
+
+.react-calendar__month-view__days__day {
+    border-radius: 0.5rem;
+}
+
+@media only screen and (min-width: 798px)  {
     .react-calendar {
         height: 414px;
-        width: 500px;
+        /* width: 50%; */
+        margin-right: 16px;
         font-size: 18px;
     }
     
