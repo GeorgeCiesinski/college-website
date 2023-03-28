@@ -30,7 +30,7 @@ const hero = () => {
         className='w-full h-full bg-center bg-cover'
       ></div>
       <div 
-        className='font-poppins absolute top-[10%] left-[50%] -translate-x-[50%] translate-y-[-10%] font-medium text-[18px] sm:text-[30px] text-center sm:text-left text-white text-shadow'
+        className='font-poppins absolute top-[15%] left-[50%] -translate-x-[50%] translate-y-[-15%] font-medium text-[18px] sm:text-[30px] text-center sm:text-left text-white text-shadow'
       >
         {heroSlides[currentIndex].title}
       </div>

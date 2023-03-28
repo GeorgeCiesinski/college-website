@@ -14,6 +14,9 @@ const calendar = () => {
     >
       <div className='w-4/5 sm:w-1/2 p-4'>
         <h1 className={`${styles.heading1}`}>Events</h1>
+        <p className='px-2 py-4 whitespace-pre-line font-poppins'>
+          Stay up to date on service updates, workshops, events, and lunch 'n learns. 
+        </p>
         <Calendar onChange={onChange} value={value} />
       </div>
       <div className='flex justify-center w-full sm:w-1/2 p-4'>
