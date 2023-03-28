@@ -37,8 +37,11 @@ const App = () => (
     <div className='bg-gray-50'>
       <div className={`${styles.boxWidth}`}>
         <Bits />
-        <Accessibility /> 
       </div>
+    </div>
+
+    <div>
+      <Accessibility /> 
     </div>
 
     <div className={`bg-primary1 ${styles.paddingX}`}>
