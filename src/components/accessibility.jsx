@@ -5,12 +5,12 @@ import { Icon } from '@mdi/react';
 const accessibility = () => {
   return (
     <div>
-        <div class=''>
+        <div className=''>
 
         </div>
         <button
             title='Accessibility'
-            className='fixed bottom-0 z-30 border-[1px] border-white rounded-full bg-primary1 text-white p-2 m-2 cursor-pointer'
+            className='fixed left-0 bottom-0 z-30 border-[1px] border-white rounded-full bg-primary1/50 hover:scale-110 text-white p-2 m-2 cursor-pointer'
             alt='accessibility'>
             <Icon 
                 path={mdiHuman} 
