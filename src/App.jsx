@@ -34,7 +34,7 @@ const App = () => (
       </div>
     </div>
 
-    <div>
+    <div className='bg-gray-50'>
       <div className={`${styles.boxWidth}`}>
         <Bits />
       </div>

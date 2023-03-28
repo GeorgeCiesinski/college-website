@@ -22,7 +22,7 @@ const QuestionAnswer = ({ title, answer }) => {
           className='w-[28px] h-[28px]'
         />
       </button>
-      <div className={`${toggle ? 'flex' : 'hidden'} whitespace-pre-line bg-primary2 text-black p-2`}>
+      <div className={`${toggle ? 'flex' : 'hidden'} whitespace-pre-line bg-primary2 font-medium text-black p-2`}>
         {answer}
       </div>
     </>
@@ -33,7 +33,7 @@ const faq = () => {
   return (
     <section 
       id='faq'
-      className='flex flex-wrap'
+      className='flex flex-wrap py-4'
     >
       <div className='w-full sm:w-1/2 p-4'>
         <h1 className={`${styles.heading1}`}>Frequently Asked Questions</h1>

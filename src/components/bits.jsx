@@ -26,14 +26,8 @@ const bits = () => {
   return (
     <div className='h-[300px] sm:h-[450px] w-full relative group'>
       <div
-        style={{ backgroundImage: `url(${heroSlides[currentIndex].image})` }}
-        className='w-full h-full bg-center bg-cover'
+        className='w-full h-full'
       ></div>
-      <div 
-        className='absolute top-[20%] left-[50%] -translate-x-[50%] translate-y-[-20%] font-bold text-[18px] sm:text-[30px] text-white text-shadow'
-      >
-        {heroSlides[currentIndex].title}
-      </div>
       <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 rounded-full p2 bg-black/20 text-white cursor-pointer'>
         <Icon 
                       path={mdiChevronLeft} 

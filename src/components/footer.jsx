@@ -30,16 +30,16 @@ const footer = () => {
       </div>
 
       <div className='text-primary2 flex flex-wrap justify-center py-2 text-[12px]'>
-        <div className='cursor-pointer mx-2'>
+        <div className='cursor-pointer mx-2 hover:underline'>
           Privacy Policy
         </div>
-        <div className='cursor-pointer mx-2'>
+        <div className='cursor-pointer mx-2 hover:underline'>
           Terms of Use
         </div>
-        <div className='cursor-pointer mx-2'>
+        <div className='cursor-pointer mx-2 hover:underline'>
           Code of Student Conduct
         </div>
-        <div className='cursor-pointer mx-2'>
+        <div className='cursor-pointer mx-2 hover:underline'>
           Request Alternate Format
         </div>
       </div>

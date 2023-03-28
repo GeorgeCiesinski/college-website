@@ -232,6 +232,10 @@ export const footerLinks = [
         title: "Students",
         links: [
             {
+                id: "international-students",
+                title: "International Students"
+            },
+            {
                 id: "programs",
                 title: "Programs"
             },
@@ -246,10 +250,6 @@ export const footerLinks = [
             {
                 id: "student-life",
                 title: "Student Life"
-            },
-            {
-                id: "international-students",
-                title: "International Students"
             }
         ]
     },
