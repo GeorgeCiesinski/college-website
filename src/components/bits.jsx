@@ -10,7 +10,7 @@ const Tile = ({ title, description, image, alt }) => {
     <>
       <img src={image} alt={alt} className='h-auto rounded-t-lg' />
       <div className='p-2'>
-        <p className='font-bold text-[18px] text-center'>
+        <p className='font-bold text-[18px] text-center pb-2'>
           {title}
         </p>
         <p className='text-center'>

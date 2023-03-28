@@ -6,6 +6,14 @@ import student from '../assets/images/hero/annie-spratt-QckxruozjRg-unsplash.jpg
 import { mdiFormTextboxPassword, mdiWifi, mdiLaptop, mdiListBoxOutline, mdiFaceAgent, mdiDownload, mdiBulletinBoard, mdiMicrosoftOnedrive } from '@mdi/js';
 import { mdiPrinter, mdiLibrary, mdiCloudCircle, mdiCalendar, mdiLaptopAccount, mdiAccountWrench } from '@mdi/js';
 import windows from '../assets/images/bits/windows7end.jpg';
+import phishing from '../assets/images/bits/phishingthumb.jpg';
+import pirates from '../assets/images/bits/pirates_have_no_shame_thumb2018-03-05.jpg';
+import charger from '../assets/images/bits/charger_thumb_0.jpg';
+import ships from '../assets/images/bits/loose_lips_sink_ships_thumb_2018-04-03.jpg';
+import pirates2 from '../assets/images/bits/pirates_bury_their_treasure_for_a_reason_thumb_2018-02-15.jpg';
+import honeytrap from '../assets/images/bits/honeytrap_thumb.jpg';
+import cursed from '../assets/images/bits/beware_of_cursed_software_thumb_2018-01-13.jpg';
+
 
 export const navLinks = [
     {
@@ -235,45 +243,45 @@ export const bytesImages = [
     },
     {
         id: "image-2",
-        title: "We support students and staff in the journey of discovery",
+        title: "How to spot a phishing scam",
         description: "2 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
-        image: windows,
+        image: phishing,
     },
     {
         id: "image-3",
-        title: "We support students and staff in the journey of discovery",
-        description: "3 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
-        image: windows,
+        title: "Important Notice: Health Canada Warning",
+        description: "4 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
+        image: charger,
     },
     {
         id: "image-4",
-        title: "We support students and staff in the journey of discovery",
-        description: "4 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
-        image: windows,
+        title: "Loose Lips Sink Ships",
+        description: "5 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
+        image: ships,
     },
     {
         id: "image-5",
-        title: "We support students and staff in the journey of discovery",
-        description: "5 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
-        image: windows,
+        title: "Pirates Have No Shame",
+        description: "3 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
+        image: pirates,
     },
     {
-        id: "6",
-        title: "We support students and staff in the journey of discovery",
+        id: "image-6",
+        title: "Pirates Bury their Treasure for a Reason",
         description: "6 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
-        image: windows,
+        image: pirates2,
     },
     {
         id: "7",
-        title: "We support students and staff in the journey of discovery",
+        title: "Do Not Fall for the Honeytrap",
         description: "7 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
-        image: windows,
+        image: honeytrap,
     },
     {
         id: "8",
-        title: "We support students and staff in the journey of discovery",
+        title: "Beware of Cursed Software",
         description: "8 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
-        image: windows,
+        image: cursed,
     },
 ]
 
