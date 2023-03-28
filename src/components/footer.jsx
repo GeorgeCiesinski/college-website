@@ -9,11 +9,11 @@ const footer = () => {
 
       <ul className='flex flex-wrap justify-between py-6'>
         {footerLinks.map((footer, index) => (
-          <li key={footer.id} className='font-poppins font-medium text-[20px] mx-2 my-2'>
+          <li key={footer.id} className='font-poppins font-medium text-[16px] sm:text-[20px] mx-2 my-2'>
             {footer.title}
             <ul className='mt-2'>
               {footer.links.map((link, index) => (
-                <li key={link.id} className='text-primary2 font-normal text-[16px] cursor-pointer hover:underline'>{link.title}</li>
+                <li key={link.id} className='text-primary2 font-normal text-[12px] sm:text-[16px] cursor-pointer hover:underline'>{link.title}</li>
               ))}
             </ul>
           </li>

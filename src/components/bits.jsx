@@ -25,7 +25,7 @@ const bits = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const width = screen.width;
   const margin = 32;
-  const translateAmount = width > 767 ? 235 + margin : 200 + margin;
+  const translateAmount = width > 767 ? 252 + margin : 200 + margin;
 
   useEffect(() => {
     const slider = document.querySelector('.slider');
@@ -52,9 +52,9 @@ const bits = () => {
     <div className='w-full relative group py-8'>
       <div className={`${styles.flexCenter} relative w-full h-max`}>
         <div className='w-3/5 sm:w-4/5 overflow-hidden'>
-          <div className='flex w-max slider'>
+          <div className='flex w-max slider transition duration-300'>
             {bytesImages.map((byte, index) => (
-              <div key={byte.id} className='w-[200px] sm:w-[235px] my-20 mx-4 bg-primary2 rounded-lg drop-shadow-lg hover:scale-110 cursor-pointer'>
+              <div key={byte.id} className='w-[200px] sm:w-[252px] my-20 mx-4 bg-primary2 rounded-lg drop-shadow-lg hover:scale-110 cursor-pointer'>
                 <Tile title={byte.title} description={byte.description} image={byte.image} alt={byte.id} />
               </div>
             ))}
