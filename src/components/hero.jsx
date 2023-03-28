@@ -34,30 +34,30 @@ const hero = () => {
       >
         {heroSlides[currentIndex].title}
       </div>
-      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 rounded-full p2 bg-black/20 text-white cursor-pointer'>
+      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 rounded-full p2 bg-black/20 hover:bg-black/40 text-white cursor-pointer'>
         <Icon 
-                      path={mdiChevronLeft} 
-                      size={2} 
-                      alt='slide-left'
-                      onClick={prevSlide}
+          path={mdiChevronLeft} 
+          size={2} 
+          alt='slide-left'
+          onClick={prevSlide}
         /> 
       </div>
-      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 rounded-full p2 bg-black/20 text-white cursor-pointer'>
+      <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 rounded-full p2 bg-black/20 hover:bg-black/40 text-white cursor-pointer'>
         <Icon 
-                      path={mdiChevronRight} 
-                      size={2} 
-                      alt='slide-right'
-                      onClick={nextSlide}
+          path={mdiChevronRight} 
+          size={2} 
+          alt='slide-right'
+          onClick={nextSlide}
         /> 
       </div>
-      <div className='absolute top-[90%] left-[50%] -translate-x-[50%] flex justify-center rounded-full bg-black/20'>
+      <div className='absolute top-[90%] left-[50%] -translate-x-[50%] flex justify-center rounded-full bg-black/20 hover:bg-black/40'>
         {heroSlides.map((slide, slideIndex) => (
           <div key={slideIndex} className={`text-2xl cursor-pointer text-white ${slideIndex === heroSlides.length - 1 ? 'mr-0' : 'mr-5'}`}>
             <Icon 
-                      path={mdiCircleMedium}
-                      size={1}
-                      alt='slide-switch'
-                      onClick={() => goToSlide(slideIndex)}
+              path={mdiCircleMedium}
+              size={1}
+              alt='slide-switch'
+              onClick={() => goToSlide(slideIndex)}
             />
           </div>
         ))}

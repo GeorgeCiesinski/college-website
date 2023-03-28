@@ -2,8 +2,8 @@ const styles = {
     boxWidth: "xl:max-w-[1280px] w-full",
     contentWidth: "max-w-[1440px] w-full",
 
-    heading1: "font-poppins text-primary2 text-[25px] sm:text-[30px] font-bold py-4 text-center sm:text-left",
-    heading2: "font-poppins text-primary2 text-[16px] sm:text-[20px] font-bold py-4 text-center sm:text-left",
+    heading1: "font-poppins text-primary1 text-[25px] sm:text-[30px] font-bold py-4 text-center sm:text-left",
+    heading2: "font-poppins text-primary1 text-[16px] sm:text-[20px] font-bold py-4 text-center sm:text-left",
     altHeading1: "font-poppins text-white text-[25px] sm:text-[30px] font-bold py-4 text-center sm:text-left",
     altHeading2: "font-poppins text-white text-[16px] sm:text-[20px] font-bold py-4 text-center sm:text-left",
     paragraph: "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",

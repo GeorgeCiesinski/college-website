@@ -1,11 +1,11 @@
-import journey from '../assets/images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg';
-import ideas from '../assets/images/airfocus-v89zhr0iBFY-unsplash.jpg';
-import business from '../assets/images/microsoft-365-oUbzU87d1Gc-unsplash.jpg';
-import technology from '../assets/images/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg';
-import student from '../assets/images/annie-spratt-QckxruozjRg-unsplash.jpg';
+import journey from '../assets/images/hero/priscilla-du-preez-XkKCui44iM0-unsplash.jpg';
+import ideas from '../assets/images/hero/airfocus-v89zhr0iBFY-unsplash.jpg';
+import business from '../assets/images/hero/microsoft-365-oUbzU87d1Gc-unsplash.jpg';
+import technology from '../assets/images/hero/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg';
+import student from '../assets/images/hero/annie-spratt-QckxruozjRg-unsplash.jpg';
 import { mdiFormTextboxPassword, mdiWifi, mdiLaptop, mdiListBoxOutline, mdiFaceAgent, mdiDownload, mdiBulletinBoard, mdiMicrosoftOnedrive } from '@mdi/js';
 import { mdiPrinter, mdiLibrary, mdiCloudCircle, mdiCalendar, mdiLaptopAccount, mdiAccountWrench } from '@mdi/js';
-
+import windows from '../assets/images/bits/windows7end.jpg';
 
 export const navLinks = [
     {
@@ -225,6 +225,57 @@ export const visitInfo = {
     59 Hayden Street, 5th floor
     Monday to Friday: 7:30 a.m. - 4:30 p.m.`
 }
+
+export const bytesImages = [
+    {
+        id: "image-1",
+        title: "We support students and staff in the journey of discovery",
+        description: "1 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
+        image: windows,
+    },
+    {
+        id: "image-2",
+        title: "We support students and staff in the journey of discovery",
+        description: "2 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
+        image: windows,
+    },
+    {
+        id: "image-3",
+        title: "We support students and staff in the journey of discovery",
+        description: "3 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
+        image: windows,
+    },
+    {
+        id: "image-4",
+        title: "We support students and staff in the journey of discovery",
+        description: "4 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
+        image: windows,
+    },
+    {
+        id: "image-5",
+        title: "We support students and staff in the journey of discovery",
+        description: "5 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
+        image: windows,
+    },
+    {
+        id: "6",
+        title: "We support students and staff in the journey of discovery",
+        description: "6 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
+        image: windows,
+    },
+    {
+        id: "7",
+        title: "We support students and staff in the journey of discovery",
+        description: "7 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
+        image: windows,
+    },
+    {
+        id: "8",
+        title: "We support students and staff in the journey of discovery",
+        description: "8 Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
+        image: windows,
+    },
+]
 
 export const footerLinks = [
     {
