@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState} from 'react';
+import { useState, useEffect } from 'react';
 import styles from '../style';
 import { bytesImages } from '../data/constants';
 import { mdiChevronLeft, mdiChevronRight, mdiCircleMedium } from '@mdi/js';
@@ -24,23 +24,24 @@ const Tile = ({ title, description, image, alt }) => {
 const bits = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const width = screen.width;
-  const margin = 14;
+  const margin = 32;
   const translateAmount = width > 767 ? 235 + margin : 200 + margin;
+
+  useEffect(() => {
+    const slider = document.querySelector('.slider');
+    slider.style.transform = `translateX(-${currentIndex * translateAmount}px)`;
+  })
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? bytesImages.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
-    const slider = document.querySelector('.slider');
-    slider.style.transform = `translateX(-${currentIndex * translateAmount}px)`;
   }
 
   const nextSlide = () => {
-    const isFirstSlide = currentIndex === bytesImages.length - 1;
-    const newIndex = isFirstSlide ? 0 : currentIndex + 1;
+    const isLastSlide = currentIndex === bytesImages.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
-    const slider = document.querySelector('.slider');
-    slider.style.transform = `translateX(-${currentIndex * translateAmount}px)`;
   }
 
   const goToSlide = (slideIndex) => {
