@@ -23,17 +23,24 @@ const Tile = ({ title, description, image, alt }) => {
 
 const bits = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const width = screen.width;
+  const margin = 14;
+  const translateAmount = width > 767 ? 235 + margin : 200 + margin;
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? bytesImages.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
+    const slider = document.querySelector('.slider');
+    slider.style.transform = `translateX(-${currentIndex * translateAmount}px)`;
   }
 
   const nextSlide = () => {
     const isFirstSlide = currentIndex === bytesImages.length - 1;
     const newIndex = isFirstSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
+    const slider = document.querySelector('.slider');
+    slider.style.transform = `translateX(-${currentIndex * translateAmount}px)`;
   }
 
   const goToSlide = (slideIndex) => {
@@ -44,9 +51,9 @@ const bits = () => {
     <div className='w-full relative group py-8'>
       <div className={`${styles.flexCenter} relative w-full h-max`}>
         <div className='w-3/5 sm:w-4/5 overflow-hidden'>
-          <div className='flex w-max'>
+          <div className='flex w-max slider'>
             {bytesImages.map((byte, index) => (
-              <div key={byte.id} className='w-[235px] my-20 mx-4 bg-primary2 rounded-lg drop-shadow-lg hover:scale-110 cursor-pointer'>
+              <div key={byte.id} className='w-[200px] sm:w-[235px] my-20 mx-4 bg-primary2 rounded-lg drop-shadow-lg hover:scale-110 cursor-pointer'>
                 <Tile title={byte.title} description={byte.description} image={byte.image} alt={byte.id} />
               </div>
             ))}
