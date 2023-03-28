@@ -1,6 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
-import { mdiHuman, mdiClose, mdiContrastCircle, mdiFormatSize } from '@mdi/js';
+import { 
+    mdiHuman, mdiClose, mdiContrastCircle, mdiFormatSize, mdiLink, mdiCursorDefaultOutline, 
+    mdiInvertColors, mdiAlphabeticalVariant, mdiFormatLetterSpacing, mdiFormatLineSpacing 
+} from '@mdi/js';
 import { Icon } from '@mdi/react';
 
 const accessibility = () => {
@@ -8,8 +11,7 @@ const accessibility = () => {
 
     return (
         <div>
-            {/* ${toggle ? 'flex' : 'hidden'} */}
-            <div className={`flex flex-col fixed top-0 left-0 w-full sm:w-1/3 h-full z-40 bg-primary1`}>
+            <div className={`${toggle ? 'flex' : 'hidden'} flex flex-col fixed top-0 left-0 w-full sm:w-1/3 h-full z-40 bg-primary1`}>
                 <div className='w-full flex justify-end text-white'>
                     <div 
                         className='w-max h-max hover:bg-white/20 p-2 m-4 rounded-lg'
@@ -34,7 +36,7 @@ const accessibility = () => {
                                 path={mdiContrastCircle} 
                                 size={3} 
                             />
-                            <p>
+                            <p className='text-center'>
                                 Contrast
                             </p>
                         </div>
@@ -47,7 +49,7 @@ const accessibility = () => {
                                 path={mdiFormatSize} 
                                 size={3} 
                             />
-                            <p>
+                            <p className='text-center'>
                                 Font Size
                             </p>
                         </div>
@@ -55,89 +57,88 @@ const accessibility = () => {
                     <div className='flex justify-around text-white'>
                         <div 
                             className='w-[112px] h-[112px] flex flex-col justify-center items-center hover:bg-white/20 cursor-pointer p-2 m-4 rounded-lg'
-                            alt='contrast'
-                            title='Contrast'
+                            alt='highlight-links'
+                            title='Highlight Links'
                         >
                             <Icon 
-                                path={mdiContrastCircle} 
+                                path={mdiLink} 
                                 size={3} 
                             />
-                            <p>
-                                Contrast
+                            <p className='text-center'>
+                                Highlight Links
                             </p>
                         </div>
                         <div 
                             className='w-[112px] h-[112px] flex flex-col justify-center items-center hover:bg-white/20 cursor-pointer p-2 m-4 rounded-lg'
-                            alt='font-size'
-                            title='Font Size'
+                            alt='cursor'
+                            title='Cursor'
                         >
                             <Icon 
-                                path={mdiFormatSize} 
+                                path={mdiCursorDefaultOutline} 
                                 size={3} 
                             />
-                            <p>
-                                Font Size
-                            </p>
-                        </div>
-                    </div>
-                    <div className='flex justify-around text-white'>
-                        <div 
-                            className='w-[112px] h-[112px] flex flex-col justify-center items-center hover:bg-white/20 cursor-pointer p-2 m-4 rounded-lg'
-                            alt='contrast'
-                            title='Contrast'
-                        >
-                            <Icon 
-                                path={mdiContrastCircle} 
-                                size={3} 
-                            />
-                            <p>
-                                Contrast
-                            </p>
-                        </div>
-                        <div 
-                            className='w-[112px] h-[112px] flex flex-col justify-center items-center hover:bg-white/20 cursor-pointer p-2 m-4 rounded-lg'
-                            alt='font-size'
-                            title='Font Size'
-                        >
-                            <Icon 
-                                path={mdiFormatSize} 
-                                size={3} 
-                            />
-                            <p>
-                                Font Size
+                            <p className='text-center'>
+                                Cursor
                             </p>
                         </div>
                     </div>
                     <div className='flex justify-around text-white'>
                         <div 
                             className='w-[112px] h-[112px] flex flex-col justify-center items-center hover:bg-white/20 cursor-pointer p-2 m-4 rounded-lg'
-                            alt='contrast'
-                            title='Contrast'
+                            alt='color-saturation'
+                            title='Color Saturation'
                         >
                             <Icon 
-                                path={mdiContrastCircle} 
+                                path={mdiInvertColors} 
                                 size={3} 
                             />
-                            <p>
-                                Contrast
+                            <p className='text-center'>
+                                Color Saturation
                             </p>
                         </div>
                         <div 
                             className='w-[112px] h-[112px] flex flex-col justify-center items-center hover:bg-white/20 cursor-pointer p-2 m-4 rounded-lg'
-                            alt='font-size'
-                            title='Font Size'
+                            alt='dyslexia-friendly'
+                            title='Dyslexia Friendly'
                         >
                             <Icon 
-                                path={mdiFormatSize} 
+                                path={mdiAlphabeticalVariant} 
                                 size={3} 
                             />
-                            <p>
-                                Font Size
+                            <p className='text-center'>
+                                Dyslexia Friendly
+                            </p>
+                        </div>
+                    </div>
+                    <div className='flex justify-around text-white'>
+                        <div 
+                            className='w-[112px] h-[112px] flex flex-col justify-center items-center hover:bg-white/20 cursor-pointer p-2 m-4 rounded-lg'
+                            alt='text-spacing'
+                            title='Text Spacing'
+                        >
+                            <Icon 
+                                path={mdiFormatLetterSpacing} 
+                                size={3} 
+                            />
+                            <p className='text-center'>
+                                Text Spacing
+                            </p>
+                        </div>
+                        <div 
+                            className='w-[112px] h-[112px] flex flex-col justify-center items-center hover:bg-white/20 cursor-pointer p-2 m-4 rounded-lg'
+                            alt='line-spacing'
+                            title='Line Spacing'
+                        >
+                            <Icon 
+                                path={mdiFormatLineSpacing} 
+                                size={3} 
+                            />
+                            <p className='text-center'>
+                                Line Spacing
                             </p>
                         </div>
                     </div>
                 </div>
-                
             </div>
             <button
                 title='Accessibility'
