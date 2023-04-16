@@ -1,6 +1,14 @@
 # ITS-mock-up
 Mock-up website for interview at Humber ITS
 
+## Inspiration
+
+I recently had my first programming interview for a Web Developer role at a College. I passed my first interview and was asked to create a mock-up for their website and to present it a week later. I decided to pair this task with my personal goal of learning [React](https://react.dev/) and [Tailwind](https://tailwindcss.com/). I was blown away with how easy it is to prototype a website with these technologies. In the past, it took me months to create a website of this quality from scratch, but in React and Tailwind it took me less than a week. 
+
+## Functionality
+
+This site is mostly non functioning. It does not have any external links, and only internal components like the carousel and drop downs are functional. 
+
 ## Credits
 
 Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/photos/QckxruozjRg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
