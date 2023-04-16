@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import styles from '../style';
 import { navLinks } from '../data/constants';
-import logo from '../assets/images/humber_logo.svg';
+import logo from '../assets/images/student-cap.svg';
 import { mdiMenu, mdiClose, mdiMagnify, mdiAccountCircle } from '@mdi/js';
 import { Icon } from '@mdi/react';
 
@@ -13,7 +13,10 @@ const navbar = () => {
     return (
         <nav className='w-full flex flex-wrap py-2 justify-between items-center navbar'>
             
-            <img src={logo} alt='Humber' className='w-[140px] pr-6 my-4' />
+            <div className='flex justify-between space-x-2 items-center w-[140px] text-[25px] mr-4'>
+                <img src={logo} alt='Humber' className='w-[60px] my-4' />
+                <h1>College</h1>
+            </div>
 
             <div className='hidden sm:block mx-4 my-2'>
                 <form action='#' className='flex items-center'>
