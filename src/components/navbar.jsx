@@ -13,8 +13,8 @@ const navbar = () => {
     return (
         <nav className='w-full flex flex-wrap py-2 justify-between items-center navbar'>
             
-            <div className='flex justify-between space-x-2 items-center w-[140px] text-[25px] mr-4'>
-                <img src={logo} alt='Humber' className='w-[60px] my-4' />
+            <div className='flex justify-between space-x-2 items-center text-[25px] mr-4'>
+                <img src={logo} alt='Humber' className='w-[40px] my-4' />
                 <h1>College</h1>
             </div>
 

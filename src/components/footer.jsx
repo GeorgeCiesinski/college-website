@@ -45,7 +45,7 @@ const footer = () => {
       </div>
 
       <div className='flex justify-center py-2'>
-        <p>&copy; 2023 Humber College</p> 
+        <p>&copy; 2023 College</p> 
       </div>
       
     </div>

@@ -24,10 +24,10 @@ const calendar = () => {
       <div className='flex justify-center w-full sm:w-1/2 p-4'>
         <div>
           <h1 className={`${styles.heading1}`}>Visit</h1>
-          <h2 className={`${styles.heading2}`}>Humber North Campus</h2>
+          <h2 className={`${styles.heading2}`}>North Campus</h2>
           <p className='p-2 whitespace-pre-line font-poppins'>{visitInfo.north}</p>
-          <h2 className={`${styles.heading2}`}>Humber Lakeshore Campus</h2>
-          <p className='p-2 whitespace-pre-line font-poppins'>{visitInfo.lake}</p>
+          <h2 className={`${styles.heading2}`}>South Campus</h2>
+          <p className='p-2 whitespace-pre-line font-poppins'>{visitInfo.south}</p>
           <div className={`${styles.flexCenter} my-6`}>
             <button className='flex flex-col justify-center items-center p-4 bg-primary2 font-bold rounded-lg drop-shadow-xl hover:scale-110 w-[150px] h-[75px]'>
               <Icon 
