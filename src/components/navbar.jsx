@@ -15,7 +15,7 @@ const navbar = () => {
             
             <div className='flex justify-between space-x-2 items-center text-[25px] mr-4'>
                 <img src={logo} alt='Humber' className='w-[40px] my-4' />
-                <h1>College</h1>
+                <h1 className='text-primary1'>College</h1>
             </div>
 
             <div className='hidden sm:block mx-4 my-2'>

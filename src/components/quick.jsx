@@ -22,7 +22,7 @@ const QuickButton = ({ title, icon, alt }) => {
 const ServiceSection = ({ title, services }) => {
   return (
     <div className='flex flex-col items-center my-4 hover:bg-black/5 rounded-lg'>
-      <h2 className={`${styles.altHeading2}`}>{title}</h2>
+      <h2 className={`${styles.heading2}`}>{title}</h2>
       <div className='flex flex-wrap justify-center'>
         {services.map((service, index) => (
           <div key={service.id}>
@@ -40,7 +40,7 @@ const quick = () => {
       id="services"
       className={`flex flex-col items-center p-4 w-full`}
     >
-      <h1 className={`${styles.altHeading1}`}>Services</h1>
+      <h1 className={`${styles.heading1}`}>Services</h1>
       <div className={`${styles.flexCenter} flex-wrap hover:bg-black/5 rounded-lg`}>
         {quickActions.map((action, index) => (
           <div key={action.id}>

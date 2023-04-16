@@ -5,14 +5,14 @@ import technology from '../assets/images/hero/christina-wocintechchat-com-glRqyW
 import student from '../assets/images/hero/annie-spratt-QckxruozjRg-unsplash.jpg';
 import { mdiFormTextboxPassword, mdiWifi, mdiLaptop, mdiListBoxOutline, mdiFaceAgent, mdiDownload, mdiBulletinBoard, mdiMicrosoftOnedrive } from '@mdi/js';
 import { mdiPrinter, mdiLibrary, mdiCloudCircle, mdiCalendar, mdiLaptopAccount, mdiAccountWrench } from '@mdi/js';
-import windows from '../assets/images/bits/windows7end.jpg';
-import phishing from '../assets/images/bits/phishingthumb.jpg';
-import pirates from '../assets/images/bits/pirates_have_no_shame_thumb2018-03-05.jpg';
-import charger from '../assets/images/bits/charger_thumb_0.jpg';
-import ships from '../assets/images/bits/loose_lips_sink_ships_thumb_2018-04-03.jpg';
-import pirates2 from '../assets/images/bits/pirates_bury_their_treasure_for_a_reason_thumb_2018-02-15.jpg';
-import honeytrap from '../assets/images/bits/honeytrap_thumb.jpg';
-import cursed from '../assets/images/bits/beware_of_cursed_software_thumb_2018-01-13.jpg';
+import support from '../assets/images/bits/hannah-busing-Zyx1bK9mqmA-unsplash.jpg';
+import phishing from '../assets/images/bits/adnan-khan-VS2C5_GI_MM-unsplash.jpg';
+import pirates from '../assets/images/bits/zoltan-tasi-HTpAIzZRHvw-unsplash.jpg';
+import health from '../assets/images/bits/online-marketing-hIgeoQjS_iE-unsplash.jpg';
+import ships from '../assets/images/bits/yevhen-buzuk-R6TMFhxRxeI-unsplash.jpg';
+import pirates2 from '../assets/images/bits/nadjib-br-51Ms-0PbCHo-unsplash.jpg';
+import honeytrap from '../assets/images/bits/mae-mu-Mqb0YDRNr7k-unsplash.jpg';
+import cursed from '../assets/images/bits/alessio-montemurro-h4lvfRaOQOo-unsplash.jpg';
 
 
 export const navLinks = [
@@ -30,7 +30,7 @@ export const navLinks = [
     },
     {
         id: "bits",
-        title: "Bits & Bytes",
+        title: "Info Bits",
     },
     {
         id: "about",
@@ -84,7 +84,7 @@ export const quickActions = [
     },
     {
         id: "eform",
-        title: "Submit an eForm",
+        title: "Submit a Request",
         icon: mdiListBoxOutline
     },
     {
@@ -104,7 +104,7 @@ export const quickActions = [
     },
     {
         id: "whats-new",
-        title: "Whats New in ITS?",
+        title: "Whats New in College?",
         icon: mdiBulletinBoard
     },
 ]
@@ -212,7 +212,7 @@ export const faqQuestions = [
         title: "Where Do I Download Work-At-Home Software?",
         answer: `Students:
 
-        Select software from Microsoft is available for students to download for use on a personal computing device at no cost. An active HMail account is required. Titles include Windows (Upgrade), Office Professional, and Office for Mac. Look for the “Work-at-home” link on our Web site. Limit of one copy of each title per student.
+        Select software from Microsoft is available for students to download for use on a personal computing device at no cost. An active CMail account is required. Titles include Windows (Upgrade), Office Professional, and Office for Mac. Look for the “Work-at-home” link on our Web site. Limit of one copy of each title per student.
         
         Employees:
         
@@ -243,7 +243,7 @@ export const bytesImages = [
         id: "image-1",
         title: "We support students and staff in the journey of discovery",
         description: "Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
-        image: windows,
+        image: support,
     },
     {
         id: "image-2",
@@ -255,7 +255,7 @@ export const bytesImages = [
         id: "image-3",
         title: "Important Notice: Health Canada Warning",
         description: "Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur. Do incididunt pariatur irure deserunt aliqua velit amet tempor consectetur.",
-        image: charger,
+        image: health,
     },
     {
         id: "image-4",

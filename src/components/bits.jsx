@@ -64,7 +64,7 @@ const bits = () => {
           </div>
         </div>
         <div className={`${styles.paddingX} absolute top-[10%] translate-y-[-90%]`}>
-          <h1 className={`${styles.heading1} ${styles.flexCenter} px-4`}>Bits & Bytes</h1>
+          <h1 className={`${styles.heading1} ${styles.flexCenter} px-4`}>Info Bits</h1>
         </div>
         <div className='absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 rounded-full p2 bg-black/20 hover:bg-black/40 text-white cursor-pointer'>
           <Icon 
